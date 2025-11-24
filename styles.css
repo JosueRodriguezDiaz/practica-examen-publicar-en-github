@@ -1,0 +1,23 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    overflow: hidden; /* Oculta las barras de desplazamiento si la mascota sale de la vista */
+    height: 100vh;
+    cursor: none; /* Opcional: Oculta el cursor real para que la mascota sea el 'cursor' */
+}
+
+/* Estilos de la Mascota */
+#mascota {
+    position: absolute; /* Es crucial para que pueda seguir la posición del ratón */
+    width: 40px;      /* Tamaño de la mascota */
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    
+    transition: transform 0.1s ease-out; 
+    
+    z-index: 1000; 
+ 
+   transform: translate(-50%, -50%); 
+}
